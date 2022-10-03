@@ -24,4 +24,5 @@ then
     LOAD="--load"
 fi
 
+echo "docker build $PUSH $LOAD $TAGS $BUILD_ARGS -f $4 $8"
 docker build $PUSH $LOAD $TAGS $BUILD_ARGS -f $4 $8
